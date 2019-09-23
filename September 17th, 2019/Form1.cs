@@ -37,16 +37,17 @@ namespace September_17th__2019
             Font drawFont = new Font("Arial", 16);
             SolidBrush blackBrush = new SolidBrush(Color.Black);
             SolidBrush silverBrush = new SolidBrush(Color.Silver);
+            SolidBrush darkblueBrush = new SolidBrush(Color.DarkBlue);
 
             g.Clear(Color.Gray);
-            
+            g.DrawString("Lest we forget", drawFont, blackBrush, 330, 20);
             g.FillRectangle(darkredBrush, 350, 150, 100, 100);
             g.FillEllipse(darkredBrush, 325, 150, 50, 100);
             g.FillEllipse(darkredBrush, 350, 125, 100, 50);
             g.FillEllipse(darkredBrush, 425, 150, 50, 100);
             g.FillEllipse(darkredBrush, 350, 225, 100, 50);
             g.FillPie(blackBrush, 375, 175, 50, 50, 0, 360);
-            g.FillPie(silverBrush, 398, 198, 4, 4, 0, 360);
+             g.FillPie(silverBrush, 398, 198, 4, 4, 0, 360);
         }
     }
 }
